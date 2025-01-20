@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.scss">
+        <script src="https://kit.fontawesome.com/e1962cb617.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <title>MP1</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>BENJAMIN GUAN</h1>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="background-static-image"></div>
+        <div class="stripe-grey" id="about_me">
+            <h1> About Me </h1>
+            <p> Hello! I'm a BS-MCS student currently studying computer science at the University of Illinois at Urbana-Champaign, planning to graduate in May of 2025. 
+                I'm interested in many CS-related topics, from full stack web development to system programming.
+
+                My main hobby is playing video games! I'm involved in developing games and VR applications
+                on the Unity and Godot game engines, either for fun or my research. Besides that, I enjoy occasionally reading 
+                epic fantasy and playing the piano.
+            </p>
+        </div>
+        <div class="stripe-white" id="portfolio">
+            <h1> My Projects </h1>
+            <div class="icons"> 
+                <button class="project-icon"> <i class="fa-solid fa-meteor" id="meteor"></i></button> 
+                <button class="project-icon"> <i class="fa-solid fa-trophy" id="trophy"></i> </i></button> 
+                <button class="project-icon"> <i class="fa-solid fa-rocket" id="rocket"></i></button> 
+                <button class="project-icon"> <i class="fa-solid fa-car" id="car"></i> </button> 
+                <button class="project-icon"> <i class="fa-solid fa-cube" id="graphics"></i> </button>
+            </div>
+        </div>
+        <div class="project-modal" id="meteor-modal">
+            <div class="modal-content">
+                <div id="meteor-content"> 
+                    <h1> <span> Meteorite </span> Visualization  </h1>
+                    <video autoplay loop muted>
+                        <source src="assets/Meteorite Visualization (1).mp4" type="video/mp4">
+                    </video>
+                    <h3> Visualizes thousands of meteorite landings from NASA’s Open Data Portal through multiple interactive maps and plots. </h3>
+                </div>
+                <span class="close-button">&times;</span>
+                <a href="https://github.com/erifyc1/meteorite-visualization" target="_blank" > <i class="fa-brands fa-github" id="github"></i> </a>
+            </div>
+        </div>
+        <div class="project-modal" id="trophy-modal">
+            <div class="modal-content">
+                <div id="trophy-content"> 
+                    <h1> <span> Calorie </span> Clash </h1>
+                    <img id="calorie-img" src="assets/calorie-clash.png">
+                    <h3> A fitness tracking web app that allows users to monitor their workouts and find rival users to compete against. </h3>
+                </div>
+                <span class="close-button">&times;</span>
+                <a href="https://github.com/CS222-UIUC/course-project-group-101" target="_blank" > <i class="fa-brands fa-github" id="github"></i> </a>
+            </div>
+        </div>
+        <div class="project-modal" id="rocket-modal">
+            <div class="modal-content">
+                <div id="rocket-content"> 
+                    <h1>  Model <span> Rocket </span> </h1>
+                    <img id="rocket-img" src="assets/modelrocket.png">
+                    <h3> With one line of Python, anyone can deploy their ML model to a scalable, internet-accessible inference API. </h3>
+                </div>
+                <span class="close-button">&times;</span>
+                <a href="https://github.com/rzig/modelrocket" target="_blank" > <i class="fa-brands fa-github" id="github"></i> </a>
+            </div>
+        </div>
+        <div class="project-modal" id="car-modal">
+            <div class="modal-content">
+                <div id="car-content"> 
+                    <h1> <span> Oldenburg </span> Networks  </h1>
+                    <img id="car-img" src="assets/oldenburg.png">
+                    <h3> Models a spatial dataset on the road network of Oldenburg using a CSR adjacency matrix and numerous graph algorithms. </h3>
+                </div>
+                <span class="close-button">&times;</span>
+                <a href="https://github.com/Vijay-2021/oldenburg-roads-network" target="_blank" > <i class="fa-brands fa-github" id="github"></i> </a>
+            </div>
+        </div>
+        <div class="project-modal" id="graphics-modal">
+            <div class="modal-content">
+                <div id="graphics-content"> 
+                    <h1> <span> Python </span> Rasterizer  </h1>
+                    <img id="graphics-img" src="assets/graphics.png">
+                    <h3> A Python rasterizer that uses WebGl-style text input to generate textures through the DDA and scanline algorithms. </h3>
+                </div>
+                <span class="close-button">&times;</span>
+                <a href="https://github.com/mumbler6/rasterizer" target="_blank" > <i class="fa-brands fa-github" id="github"></i> </a>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-slider">
+                <div class="slide slide1">
+                    <h1> Relevant Coursework </h1>
+                    <ul> 
+                        <li> Data Structures and Algorithms </li>
+                        <li> Computer Architecture </li>
+                        <li> System Programming </li>
+                        <li> Algs and Models of Computation </li>
+                        <li> Database Systems </li>
+                        <li> Computer Vision </li>
+                        <li> Art of Web Programming </li>
+                        <li> Interactive Computer Graphics  </li>
+                    </ul>
+                </div>
+                <div class="slide slide2">
+                    <h1> Work Experience </h1>
+                        <h3 id="left"> Course Assistant — CS128 at UIUC </h3>
+                        <h3 id="right"> June 2022 - Present </h3>
+                        <div style="clear: both;"></div>
+                    <ul> 
+                        <li> Developed new course content and assisted students during office hours. </li>
+                        <li> Reviewed and presented C++ topics to students during discussion sections. </li>
+                    </ul>
+                    <h3 id="left"> Research Assistant — CREATE VR Project </h3>
+                    <h3 id="right"> May 2023 - Present </h3>
+                    <div style="clear: both;"></div>
+                    <ul>
+                        <li> Developed VR applications for the Meta Quest 2 using C# and Unity.  </li>
+                        <li> Helped research the use of VR on improving cognitive health among aging adults.</li>
+                    </ul>
+                </div>
+                <div class="slide slide3">
+                    <h1> Technical Skills </h1>
+                    <div class="bar">
+                        <h3> Languages </h3>
+                        <h3> Tools </h3>
+                    </div>
+                    <ul>
+                        <li> Proficient: C++, Java, Python </li>
+                        <li> Familiar: JS, HTML, CSS, SQL, Rust, C# </li>
+                        <li> Proficient: Git, Pandas, NumPy </li>
+                        <li> Familiar: React, Express.js, MongoDB, Unity, Linux </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="prev-button"> <i class="fa-solid fa-chevron-left"></i> </button>
+            <button class="next-button"> <i class="fa-solid fa-chevron-right"></i> </button>
+        </div>
+        <div class="stripe-grey-small" id="contact">
+            <h1> Contact Me </h1>
+            <div class="socials">
+                <a href="bg16@illinois.edu" id="social-icon" onclick="copyURI(event)"> <i class="fa-solid fa-envelope" ></i> </a> 
+                <a href="https://github.com/mumbler6" target="_blank" id="social-icon"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/benjamin-guan-0a6956222/" target="_blank" id="social-icon"> <i class="fa-brands fa-linkedin"></i> </a>
+            </div
+>                    
+                    
+        </div>
+        <div class="footer"> 
+            <p> Copyright 2023 Benjamin Guan </p>
+        </div>
+    </body>
+</html>
